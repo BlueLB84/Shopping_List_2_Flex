@@ -21,9 +21,14 @@ function handleDeleteItemClicked() {
     console.log('`handleDeleteItemClicked` ran');
 }
 
+
+// handles all other functions
 function handleShoppingList() {
-    // render the shopping list
-    // handle when a new item is submitted
-    // handle when an item is deleted
-    // handle when an item is checked/unchecked
+    renderShoppingList();
+    handleNewItemSubmit();
+    handleItemCheckClicked();
+    handleDeleteItemClicked();
 }
+
+// callback function for app's document ready
+$(handleShoppingList);
